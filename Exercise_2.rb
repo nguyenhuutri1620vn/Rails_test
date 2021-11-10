@@ -27,7 +27,7 @@ class Staff
         print "Input position: "
         @_position = gets.chomp
         check_string(@_position)
-        print "Input salary: "
+        print "Input salary per day: "
         @_salary = Integer(gets) rescue false
         @_salary = check_int(@_salary)
         print "Input day: "
