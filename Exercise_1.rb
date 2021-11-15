@@ -1,21 +1,22 @@
-array = []
-min = array[0]
-$i = 0
-while $i <= 100  do
-    $i+=1
-    print "Input number[#{$i}]: "
-    n = Integer(gets) rescue false 
-    array << n;
-    while !n.is_a? (Integer)
-        array.pop()
-        $i-=1
-        puts "Date type input is wrong. Please enter next number!!"
+my_arrays = []
+min = my_arrays[0]
+count = 0
+STOP_SIGNAL = -1
+while count <= 100  do
+    count+=1
+    print "Input number[#{count}]: "
+    input = Integer(gets) rescue false 
+    my_arrays << input
+    while !input.is_a? (Integer)
+        my_arrays.pop()
+        count-=1
+        puts "Data type input is wrong. Please enter next number!!"
         break
     end
-    if n === -1
-        array.pop()
-        puts "Array: #{array.inspect}"
-        puts "Min of array: #{array.min}"
+    if input == STOP_SIGNAL
+        my_arrays.pop()
+        puts "Array: #{my_arrays.inspect}"
+        puts "Min of array: #{my_arrays.min}"
         break
     end
 end
