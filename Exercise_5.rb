@@ -23,9 +23,9 @@ puts "Random array: #{my_arrays.inspect}"
 #show child array
 for i in 0..input-1
     if i == input -1
-        puts "Child array increase [#{count}]: #{my_arrays[pre..i]}"
+        puts "Child array increase [#{count}]: #{my_arrays[i]}"
     elsif my_arrays[i] >= my_arrays[i+1]
-        puts "Child array increase  [#{count}]: #{my_arrays[pre..i]}"
+        puts "Child array increase [#{count}]: #{my_arrays[pre..i].to_s}"
         pre = i + 1
         count += 1
     end
