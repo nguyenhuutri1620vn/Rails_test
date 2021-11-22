@@ -18,7 +18,7 @@ for i in 1..input
     random_number = rand(1..9)
     my_arrays << random_number
 end
-#show array
+#show array 
 puts "Random array: #{my_arrays.inspect}"
 #show child array
 for i in 0..input-1
