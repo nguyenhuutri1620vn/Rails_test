@@ -3,7 +3,6 @@ output_arrays = []
 current = 0
 count = 0
 target_sum = 10
-numbers = numbers.uniq
 while current < numbers.length do
     if current < numbers.length
         count += 1
