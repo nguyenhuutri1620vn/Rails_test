@@ -18,3 +18,9 @@ module Add_db
     elapsed = ending - starting
     puts "Total time to read file and import database : #{elapsed}"
 end
+
+# Code của e đang là fetch lên toàn bộ trên RAM rồi xử lý insert 1 lần, như vậy sẽ nhanh nhưng tốn resource
+# Để cân bằng, e có thể thêm 1 biến đếm count, khi count = 1 batch (số e qui định, vd: 5, 10k) thì e sẽ save nó xuống db, đồng thời clear
+# biến insert_data, rồi bắt đầu add lại vào biến đó 
+# Tên file e kg cần viết hoa nhé, trong trường hợp này e nên viết thường.
+# con.exec "DROP TABLE IF EXISTS Users" -> nên nằm trong hàm tạo bảng nếu chưa tồn tại. Users -> t
