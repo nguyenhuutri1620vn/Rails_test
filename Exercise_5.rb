@@ -30,3 +30,10 @@ for i in 0..input-1
         count += 1
     end
 end
+
+# Code e viết gọn, có tách hàm, có comment là một điểm cộng
+# A có vài góp ý nhỏ:
+# 1. Hàm ruby bình thường cuối hàm e kg cần chữ return nhé. VD: return int -> int. và e cũng nên hạn chế đặt tên biến trùng với kiểu dữ liệu nhé
+# 2. Em có thể xem xét tách thêm hàm xử lý input của user, rồi trong main mình chỉ gọi ra + logic đơn giản thôi ah. Mục đích là để khi ng khác 
+# đọc vào hàm main của e sẽ hiểu tổng thể cách e đang làm là gì, mà chưa cần đi vào chi tiết các hàm
+# 3. Em hoàn toàn có thể thêm 1 line trống 
