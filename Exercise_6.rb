@@ -3,21 +3,25 @@ output_arrays = []
 current = 0
 count = 0
 target_sum = 10
-while current < numbers.length do
-    if current < numbers.length
+
+def add_element_into_new_array(co, cu, sum, num = [], output=[])
+    if num[cu] + num[co] == sum
+        output << num[cu].to_i
+        output << num[co].to_i
+    end
+end
+
+begin
+    while current < numbers.length do
+        #handle element in array
         count += 1
         if count == numbers.length
             current += 1
             count = current + 1
-            if count == numbers.length
-                break
-            end
+            break if count == numbers.length
         end
+    
+        add_element_into_new_array(count, current, target_sum, numbers,output_arrays)
     end
-    # puts "#{current} + #{count}"
-    if numbers[current].to_i + numbers[count].to_i == target_sum
-        output_arrays << numbers[current].to_i
-        output_arrays << numbers[count].to_i
-    end
+    puts "Output: #{output_arrays.uniq}"
 end
-puts "Output: #{output_arrays.uniq}"
