@@ -21,3 +21,9 @@ while current < numbers.length do
     end
 end
 puts "Output: #{output_arrays.uniq}"
+
+# Giải thuật của e ok, kg sử dụng include? để check phần thử trong mảng khác
+# Những dòng if mà chỉ có 1 line bên trong e có thể viết 1 dòng nhé
+# Vì e đã khai báo mảng kiểu int rồi, nên e kg cần ép kiểu .to_i
+# Line 19, 20 e có thể viết trong cùng 1 dòng output_arrays << numbers[current].to_i << numbers[count].to_i
+# E có thể xem xét tách hàm ra để xử lý, bên ngòai mình chỉ call hàm và show k
