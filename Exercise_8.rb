@@ -1,5 +1,5 @@
 a = [5, 1, 22, 26, 6, -1, 8, 10]
-b = [1, 6, -1, 26]
+b = [1, 6, -1, 10]
 current = 0
 count = -1
 #check
@@ -22,5 +22,5 @@ end
 
 #output
 begin
-    puts "Output: #{check(a, b, current, count)}"
+    puts "Output: #{check_array_b_have_belong_array_a(a, b, current, count)}"
 end
