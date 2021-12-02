@@ -28,14 +28,14 @@ def output_handle_elements_in_array_equal_target_sum (current, count_with_curren
             end
             
             sum = numbers[current] + numbers[count_with_current] + numbers[count]
-            output_numbers << numbers[current] << numbers[count_with_current] << numbers[count] if sum == target_sum
+            output_numbers << [numbers[current], numbers[count_with_current], numbers[count]] if sum == target_sum
 
         end
         break
     end
 
     #output
-    p output_numbers.each_slice(3).to_a
+    p output_numbers
 end
 
 begin
