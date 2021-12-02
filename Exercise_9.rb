@@ -7,13 +7,11 @@ count_with_current = 0
 count = 0
 sum = 0
 
-# để hình dung thuật toán dễ hơn anh bỏ cmt dòng 35 nha, cho anh đỡ cực anh
-
 # handle array
 def output_handle_elements_in_array_equal_target_sum (current, count_with_current, count, numbers = [], 
     output_numbers = [], sum, target_sum)
 
-    while current < numbers.length - 1
+    while current < numbers.length 
         count_with_current += 1
         count += 1
         while count < numbers.length
@@ -32,7 +30,6 @@ def output_handle_elements_in_array_equal_target_sum (current, count_with_curren
             sum = numbers[current] + numbers[count_with_current] + numbers[count]
             output_numbers << numbers[current] << numbers[count_with_current] << numbers[count] if sum == target_sum
 
-            # p "#{numbers[current]} + #{numbers[count_with_current]} + #{numbers[count]} = #{sum}"
         end
         break
     end
