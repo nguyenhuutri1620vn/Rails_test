@@ -7,7 +7,7 @@ count_with_current = 0
 count = 0
 sum = 0
 
-# handle array
+# handle array 
 def output_handle_elements_in_array_equal_target_sum (current, count_with_current, count, numbers = [], 
     output_numbers = [], sum, target_sum)
 
