@@ -24,3 +24,9 @@ end
 begin
     puts "Output: #{check_array_b_have_belong_array_a(a, b, current, count)}"
 end
+
+# Code e ngắn gọn, kg dùng include? là một điểm cộng 
+# Tên biến nên đặt có ý nghĩa hơn nhé e, e có thể vừa khai báo, vừa khởi tạo 
+# Vd: check_array_b_have_belong_array_a(array_a = [], array_b = [], current = 0, coount = -1)
+# a, b e có thể đặt là arrays và subarray
+# L
