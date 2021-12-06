@@ -1,15 +1,6 @@
-#Initialize varrible
-numbers = [12, 3, 1, 2, -6, 5, -8, 6]
-target_sum = 0
-output_numbers = []
-current = 0
-count_with_current = 0
-count = 0
-sum = 0
-
 # handle array 
-def output_handle_elements_in_array_equal_target_sum (current, count_with_current, count, numbers = [], 
-    output_numbers = [], sum, target_sum)
+def output_handle_elements_in_array_equal_target_sum (current = 0, count_with_current = 0, count = 0, numbers = [], 
+    output_numbers = [], sum = 0, target_sum)
 
     while current < numbers.length 
         count_with_current += 1
@@ -38,7 +29,11 @@ def output_handle_elements_in_array_equal_target_sum (current, count_with_curren
     p output_numbers
 end
 
+#Initialize varrible
+numbers = [12, 3, 1, 2, -6, 5, -8, 6]
+target_sum = 0
+
 begin
-    output_handle_elements_in_array_equal_target_sum(current, count_with_current, count, numbers, 
-        output_numbers, sum, target_sum)
+    output_handle_elements_in_array_equal_target_sum(current = 0, count_with_current = 0, count = 0, numbers, 
+        output_numbers = [], sum = 0, target_sum)
 end
