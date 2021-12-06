@@ -1,13 +1,12 @@
 numbers = [3, 5, -4, 8, 11, 1, -1, 6]
-output_arrays = []
 current = 0
 count = 0
 target_sum = 10
 
 def add_element_into_new_array(co, cu, sum, num = [], output=[])
     if num[cu] + num[co] == sum
-        output << num[cu].to_i
-        output << num[co].to_i
+        output << num[cu]
+        output << num[co]
     end
 end
 
@@ -21,7 +20,7 @@ begin
             break if count == numbers.length
         end
     
-        add_element_into_new_array(count, current, target_sum, numbers,output_arrays)
+        add_element_into_new_array(count, current, target_sum, numbers,output_arrays = [])
     end
     puts "Output: #{output_arrays.uniq}"
 end
