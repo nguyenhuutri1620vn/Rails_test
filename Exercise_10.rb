@@ -23,7 +23,7 @@ def output_handle_elements_in_array_equal_target_sum(numbers = [], target_sum)
 end
 
 #Initialize varrible
-numbers = [12, 5, 3, 2, -6, 5, -8, 6]
+numbers = [12, 1, 3, 2, -6, 5, -8, 6]
 target_sum = 0
 
 p output_handle_elements_in_array_equal_target_sum(numbers, target_sum)
