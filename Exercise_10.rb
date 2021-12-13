@@ -37,4 +37,5 @@ p output_handle_elements_in_array_equal_target_sum(numbers, target_sum)
 #B3: neu count_with_current = numbers.length -  1. Thì current =+ 1,
 #count_with_current = current + 1, count =  count_with_current + 1 (Tránh duyệt lại các phần tử trước đó).tiep tuc B1
 #Chương trình sẽ dừng khi current == numbers.length - 2
-#Anh có thể gỡ comment line 27 để dễ hình dung hơn
+#So sánh điều kiện rồi xuất kết quả
+#Anh có thể gỡ comment line 20 để dễ hình dung hơn
