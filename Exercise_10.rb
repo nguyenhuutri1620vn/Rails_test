@@ -17,7 +17,7 @@ def output_handle_elements_in_array_equal_target_sum(numbers = [], target_sum)
                 break if current == numbers.length - 2
             end
         end
-        p "#{current} + #{count_with_current} + #{count}"
+        # p "#{current} + #{count_with_current} + #{count}"
         output_numbers << [numbers[current], numbers[count_with_current], numbers[count]] if target_sum == numbers[current] + numbers[count_with_current] + numbers[count]
     end
     output_numbers
